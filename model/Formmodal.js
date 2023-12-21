@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const aggregatePaginate = require("mongoose-aggregate-paginate-v2");
 
 // Database Address 
-const url = "mongodb://localhost:27017/local/new"
+// const url = ""
   
 // Connecting to database 
 mongoose.connect(url).then((ans) => { 
