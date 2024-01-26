@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 const aggregatePaginate = require("mongoose-aggregate-paginate-v2");
 
-// Database Address 
-// const url = ""
+// Provide Database Address 
+const url = process.env.DBURL
   
 // Connecting to database 
 mongoose.connect(url).then((ans) => { 
