@@ -4,10 +4,10 @@ const Formdatacontroller = async (req, res) => {
     try {
 
         let datas = {
-            name: req.body.name,
-            email: req.body.email,
-            subject: req.body.subject,
-            message: req.body.message,
+            name: req.body.name || req.query.name,
+            email: req.body.email ||  req.query.email,
+            subject: req.body.subject || req.query.subject,
+            message: req.body.message || req.query.message,
         }
         console.log("datas", datas);
         let datainsert = await formmodal.create({
