@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const aggregatePaginate = require("mongoose-aggregate-paginate-v2");
+require("dotenv").config();
 
 // Provide Database Address 
 const url = process.env.DBURL
